@@ -28,9 +28,9 @@
     {% endfor %}
 
   </ol><!-- /#post-list -->
-
-  {% include 'pagination.html' %}
-
+  {% if articles_page.object_list %}
+      {% include 'pagination.html' %}
+  {% endif %}
 </section><!-- /#content -->
 
 {% endblock content %}
