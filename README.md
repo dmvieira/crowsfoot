@@ -21,6 +21,7 @@ services by defining the appropriate config variables:
 * `SO_ADDRESS` (Stackoverflow)
 * `TWITTER_ADDRESS`
 * `FB_ADDRESS` (Facebook)
+* `LINKEDIN_ADDRESS`
 
 An RSS icon will also show on the nav if `FEED_RSS` is set.
 
