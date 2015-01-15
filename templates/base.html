@@ -3,7 +3,7 @@
 
   <head>
     {% block head %}
-      <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+      <title>{% block title %}{{ SITENAME }} | {{ SITESUBTITLE }}{% endblock title %}</title>
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
       <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
       <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
@@ -52,22 +52,22 @@
               <li><a class="nodec icon-mail-alt" href="mailto:{{ EMAIL_ADDRESS }}"></a></li>
             {% endif %}
             {% if GITHUB_ADDRESS %}
-              <li><a class="nodec icon-github" href="{{ GITHUB_ADDRESS }}"></a></li>
+              <li><a class="nodec icon-github" target="_blank" href="{{ GITHUB_ADDRESS }}"></a></li>
             {% endif %}
             {% if SO_ADDRESS %}
-              <li><a class="nodec icon-stackoverflow" href="{{ SO_ADDRESS }}"></a></li>
+              <li><a class="nodec icon-stackoverflow" target="_blank" href="{{ SO_ADDRESS }}"></a></li>
             {% endif %}
             {% if TWITTER_ADDRESS %}
-              <li><a class="nodec icon-twitter" href="{{ TWITTER_ADDRESS }}"></a></li>
+              <li><a class="nodec icon-twitter" target="_blank" href="{{ TWITTER_ADDRESS }}"></a></li>
             {% endif %}
             {% if FB_ADDRESS %}
-              <li><a class="nodec icon-facebook" href="{{ FB_ADDRESS }}"></a></li>
+              <li><a class="nodec icon-facebook" target="_blank" href="{{ FB_ADDRESS }}"></a></li>
             {% endif %}
             {% if LINKEDIN_ADDRESS %}
-              <li><a class="nodec icon-linkedin" href="{{ LINKEDIN_ADDRESS }}"></a></li>
+              <li><a class="nodec icon-linkedin" target="_blank" href="{{ LINKEDIN_ADDRESS }}"></a></li>
             {% endif %}
             {% if FEED_RSS %}
-              <li><a class="nodec icon-rss" href="/{{ FEED_RSS }}"></a></li>
+              <li><a class="nodec icon-rss" target="_blank" href="/{{ FEED_RSS }}"></a></li>
             {% endif %}
           </ul>
         </div>
