@@ -3,7 +3,6 @@
 
   <head>
     {% block head %}
-      <meta name="google-translate-customization" content="96c7ad0d7eb6b3a7-87bb34ecb48b7391-g228f975e9d61747a-f"></meta>
       <title>{% block title %}{{ SITENAME }} | {{ SITESUBTITLE }}{% endblock title %}</title>
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
       <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
@@ -71,11 +70,6 @@
               <li><a class="nodec icon-rss" target="_blank" href="/{{ FEED_RSS }}"></a></li>
             {% endif %}
           </ul>
-          <script type="text/javascript">
-function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: '{{ GOOGLE_ANALYTICS }}'}, 'google_translate_element');
-}
-          </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </div>
         <nav class="menu-right">
           <ul>
